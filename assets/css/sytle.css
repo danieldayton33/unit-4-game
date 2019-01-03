@@ -1,0 +1,38 @@
+* {
+    font-family: 'Major Mono Display', monospace;
+}
+#wrapper {
+    background-color: darkgray;
+}
+img {
+    height: 200px;
+    margin: 20px;
+  
+}
+.header {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 60px;
+    color: navy;
+    background-color: skyblue;
+    text-align: center;
+    padding: 20px;
+}
+#content {
+    background-color: lightgoldenrodyellow;
+}
+#random-num{
+    background-color: tan;
+    font-size: 34px;
+    text-align: center;
+    padding: 20px;
+}
+#wins-loses{
+    background-color: skyblue;
+    font-size: 24px;
+    text-align: center;
+}
+#score {
+    background-color: tan;
+    font-size: 30px;
+    text-align: center;
+}
