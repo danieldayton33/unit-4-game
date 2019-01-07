@@ -42,6 +42,7 @@ for(i = 0; i < imagesArray.length; i++){
         crystalPic.attr("src", crystalImage);
         $("#crystal-pics").append(crystalPic);
     }
+        $("#status").text("Click a crystal to begin")
         ranNumGen();
         updateStats();
 }
@@ -57,6 +58,7 @@ function gameReload (){
         crystalPic.attr("src", crystalImage);
         $("#crystal-pics").append(crystalPic);
         }
+        // $("#status").empty();
         ranNumGen();
         updateStats();
         gamePlay();
@@ -73,7 +75,7 @@ function gameReload (){
     
     if(score === ranNum){
         updateStats();
-        alert("You won! Nice!");
+        $("#status").text("You win!");
         wins ++;
         score = 0;
         crystalValue = 0;
@@ -82,7 +84,7 @@ function gameReload (){
     }
     if (score > ranNum){
         updateStats();
-        alert("You lost! Not so nice!");
+        $("#status").text("You lost!");
         loses ++;
         score = 0;
         crystalValue = 0;
@@ -90,7 +92,8 @@ function gameReload (){
         gameReload();
     } 
     if (score < ranNum){
-         updateStats();
+        $("#status status2").text(""); 
+        updateStats();
     }
     });
 }
